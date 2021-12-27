@@ -1,0 +1,9 @@
+<nav>
+  <a *ngFor="let route of routes; index as i" [routerLink]="route.path" routerLinkActive="active">
+    {{ route.name }}
+  </a>
+</nav>
+
+<div class="container" id='router-container'>
+  <router-outlet></router-outlet>
+</div>
